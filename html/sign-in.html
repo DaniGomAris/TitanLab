@@ -3,104 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TitanLab</title>
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-        }
-
-        body {
-            font-family: sans-serif;
-            color: black;
-            background-color: #ffffff;
-            margin: 0;
-            padding: 0;
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            min-height: 100vh;
-        }
-
-        main {
-            text-align: center;
-            background-color: #fff;
-            padding: 20px;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-
-        .login-box {
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-        }
-
-        .login-box h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .login-box input {
-            background-color: #fcfcfc;
-            border: 2px solid #e4e4e4;
-            padding: 7px;
-            border-radius: 4px;
-            text-align: left;
-            width: 100%;
-            margin-bottom: 5px;
-            box-sizing: border-box;
-        }
-
-        .login-box input:focus {
-            border-color: #bbbbbb;
-            outline: None;
-        }
-
-        .login-box button {
-            background-color: #ff0000;
-            border: 2px solid #e4e4e4;
-            padding: 7px;
-            width: 100%;
-            border-radius: 10px;
-            cursor: pointer;
-        }
-
-        .login-box button a {
-            color: white;
-            text-decoration: none;
-        }
-        
-        .login-box a {
-            text-decoration: none; 
-            color: #ff0000;
-        }
-
-        hr {
-            border: none;
-            border-top: 1px solid #cccccc;
-            margin: 20px 0;
-            width: 100%;
-        }
-
-    </style>
+    <link rel="stylesheet" href="../css/sign-in-styles.css">
+    <link rel="icon" href="../images/logo.png" type="image/png">
+    <title>𝕿𝖎𝖙𝖆𝖓𝕷𝖆𝖇 Sign-in</title>
 </head>
 <body>
     <main>
         <div class="login-box">
-            <h1>𝕿𝖎𝖙𝖆𝖓𝕷𝖆𝖇</h1>
-            <input type="text" placeholder="Username or email"/>
-            <input type="password" placeholder="Password"/>
+            <img src="../images/logo.png" alt="TitanLab Logo">
+            <div class="input-group">
+                <input type="text" placeholder="Username or email"/>
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Password"/>
+            </div>
             <button><a href="home.html">Log in</a></button>
             <hr>
             <p>Don't have an account? <a href="sign-up.html">Sign up</a></p>
         </div>
     </main>
     <footer>
-        All rights reserved - Contact Information
+        <div class="footer-links">
+            <a href="#">Conditions of Use</a>
+            <a href="#">Privacy Notice</a>
+            <a href="#">Help</a>
+        </div>
+        © 2024 TitanLab.com
     </footer>
 </body>
 </html>
