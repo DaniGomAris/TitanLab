@@ -8,7 +8,7 @@ html, body {
 body {
     font-family: sans-serif;
     color: rgb(177, 177, 177);
-    background-color: #1a1a1a;
+    background-color: #141414;
     margin: 0;
     padding: 0;
     display: flex; 
@@ -52,12 +52,11 @@ main {
 .input-group input {
     background-color: #1a1a1a;
     border: 2px solid #1a1a1a;
+    color: white;
     padding: 7px;
     border-radius: 4px;
     text-align: left;
     width: 100%;
-    box-sizing: border-box;
-    color: white;
 }
 
 .input-group input:focus {
