@@ -11,15 +11,18 @@
 <body>
     <header>
         <div class="header-container">
+
             <div class="logo">
                 <a href="home.html">
                     <img src="../images/marca.png" alt="TitanLab Logo" class="logo-image">
                 </a>
             </div>
+
             <div class="search-bar">
                 <input type="text" placeholder="Search for products">
                 <button><i class="fas fa-search"></i></button>
             </div>
+
             <nav class="nav-links">
                 <a href="#">Products</a>
                 <div class="dropdown">
@@ -29,6 +32,7 @@
                             <button class="sign-in-btn"><a href="sign-in.html">Sign In</a></button>
                             <p class="new-customer">New Customer? <a href="sign-up.html">Click Here</a></p>
                         </div>
+                        
                         <div class="dropdown-body">
                             <div class="dropdown-left">
                                 <a href="orders.html">Your Orders</a>
@@ -43,14 +47,15 @@
                 </div>
                 <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
             </nav>
+
         </div>
     </header>
 
     <main>
         <div class="header-image">
             <img src="../images/image.jpg" alt="header">
-            <div class="overlay-text">Ergogenic help</div>
         </div>
+
         <div class="image-gallery">
             <div class="image-item">
                 <img src="../images/boldenone.jpg" alt="Image 1">
@@ -131,24 +136,6 @@
             </div>
         </div>
     </main>
-
-    <script>
-        function toggleDropdown() {
-            document.getElementById("dropdownContent").classList.toggle("show");
-        }
-
-        window.onclick = function(event) {
-            if (!event.target.matches('.sign-in-button')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                for (var i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-    </script>
-
+    <script src="../scripts/home-scripts.js"></script>
 </body>
 </html>

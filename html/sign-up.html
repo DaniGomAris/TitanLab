@@ -12,12 +12,12 @@
         <div class="signup-box">
             <h1>Create account</h1>
             <div class="input-group">
-                <label for="first-name">First Name</label>
-                <input type="text" id="first-name" required />
+                <label for="username">Username</label>
+                <input type="text" id="username" required />
             </div>
             <div class="input-group">
-                <label for="last-name">Last Name</label>
-                <input type="text" id="last-name" required />
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" required />
             </div>
             <div class="input-group">
                 <label for="email">Email</label>
@@ -35,7 +35,7 @@
                 <label for="re-password">Re-enter Password</label>
                 <input type="password" id="re-password" required />
             </div>
-            <button><a href="sign-in.html">Continue</a></button>
+            <button onclick="register()">Continue</button>
             <hr>
             <p>Already have an account? <a href="sign-in.html">Sign in</a></p>
         </div>
@@ -48,5 +48,6 @@
         </div>
         <p>© 2024 TitanLab.com</p>
     </footer>
+    <script src="../scripts/sign-up-scripts.js"></script>
 </body>
 </html>
