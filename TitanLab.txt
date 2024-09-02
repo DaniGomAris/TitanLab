@@ -1,0 +1,25 @@
+TitanLab
+
+OBJETIVO
+Desarrollar una aplicacion web para la nueva empresa de suplementos TitanLab, la cual quiere vender sus productos como suplementos o ayudas epaticas para deportistas, en el login tiene la opcion de entrar como administrador o como comprador, los administradores tendrán la opcion de agregar nuevos productos, editar los ya existentes o eliminarlos, Los compradores solo pdoran acceder si son mayores de 18 años, podrán comprar, añadir a un carrito de compras, visualizer sus pedidos, iniciar y cerrar session, editar su perfil, cancelar compras, pagar los productos.
+
+SignUp, Login y log ut
+- Registro de usuario: Permite a los nuevos usuarios crear una cuenta, dando su nombre, correo, contraseña, fecha de Nacimiento
+- Inicio de session: Permite a los usuarios o a los administradores entrar en la aplicaciones, teniendo en cuenta si son administradores o usuarios
+- Cerrar sesion: Los compradores o administradores podran cerrar sesion 
+
+Edicion de usuario
+- Perfil comprador: Permite a los usuarios editar su informacion, como nombre, agregar una direccion de envio, añadir imagen de usuario
+- Perfil administrador: Permite a los administradores, editar su nombre y foto de perfil
+
+Productos
+- Filtrar productos: Permite que los productos esten en diferentes categorias, filtarlos por precio mayor o menor, saber si son suplementos o ayudas epaticas
+- Editar productos: Permite que se pueda editar la informacion del productos
+- Productos en bodega: Permite que se resten los productos de la bodega cuando son comprados, también se debe verificar siempre si hay o no los productos, si no hay, se le pone un letrero de agotado
+- Eliminar productos: Permite que se puedar editar los productos
+- Agregar productos: Permite agregar un producto, dando su nombre, descripción, cantidad en bodega, tipo, precio
+
+Visualización de productos:
+- Comprar productos: Se podrán añadir a un carrito de compras, mostrando el precio total del carrito, y restandolos de la bodega
+- Ver compras: Se ven las compras realizadas
+- Cancelar compra: Se podra cancelar la compra
