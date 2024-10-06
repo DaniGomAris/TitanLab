@@ -1,0 +1,18 @@
+<main>
+    <div class="login-box">
+        <img src="assets/logo.png" alt="TitanLab Logo">
+
+        <div class="input-group">
+            <input type="text" #usernameInput placeholder="Username or email" required />
+        </div>
+
+        <div class="input-group">
+            <input type="password" #passwordInput placeholder="Password" required />
+        </div>
+
+        <button (click)="login()">Log in</button>
+        <hr>
+        <p>Don't have an account? <a [routerLink]="['/sign-up']">Sign up</a></p>
+    </div>
+</main>
+<app-footer></app-footer>

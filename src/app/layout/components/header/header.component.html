@@ -1,0 +1,45 @@
+<header>
+    <div class="header-container">
+
+        <div class="logo">
+            <a routerLink="/home">
+                <img src="assets/marca.png" alt="TitanLab Logo" class="logo-image">
+            </a>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+
+        <nav class="nav-links">
+            <a routerLink="/products">Products</a>
+            <div class="dropdown">
+                <a href="javascript:void(0)" class="sign-in-button" (click)="toggleDropdown()">Hello, sign in</a>
+                <div class="dropdown-content" id="dropdownContent">
+                    <div class="dropdown-header">
+                        <button class="sign-in-btn">
+                            <a [routerLink]="['/sign-in']">Sign In</a>
+                        </button>
+                        <p class="new-customer">
+                            New Customer? <a [routerLink]="['/sign-up']">Click Here</a>
+                        </p>
+                    </div>
+
+                    <div class="dropdown-body">
+                        <div class="dropdown-left">
+                            <a routerLink="/orders">Your Orders</a>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <div class="dropdown-right">
+                            <a routerLink="/profile">Your Account</a>
+                            <a href="#">Recommendations</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a routerLink="/cart" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+        </nav>
+
+    </div>
+</header>
