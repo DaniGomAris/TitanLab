@@ -150,3 +150,16 @@ header {
     margin: 0px;
     text-decoration: none;
 }
+
+.warning-message {
+    color: white;
+}
+
+.warning-message {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    right: 100px;
+}

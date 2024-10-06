@@ -1,30 +1,54 @@
-import { Component, HostListener, ElementRef } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Component, HostListener, ElementRef, OnInit } from '@angular/core';
+import { RouterModule, Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterModule, CommonModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
+  userName: string | null = null;
+  isDropdownVisible: boolean = false;
+  showWarning: boolean = false;
 
-  constructor(private eRef: ElementRef) {}
+  constructor(private eRef: ElementRef, private router: Router) {}
+
+  ngOnInit() {
+    const storedUser = localStorage.getItem('user');
+    if (storedUser) {
+      const user = JSON.parse(storedUser);
+      this.userName = user.username || null;
+    }
+  }
 
   toggleDropdown() {
-    const dropdownContent = this.eRef.nativeElement.querySelector('#dropdownContent');
-    dropdownContent.classList.toggle('show');
+    this.isDropdownVisible = !this.isDropdownVisible;
+  }
+
+  logout() {
+    this.userName = null;
+    this.router.navigate(['/home']);
+  }
+
+  goToCart() {
+    if (!this.userName) {
+      this.showWarning = true;
+      setTimeout(() => {
+        this.showWarning = false;
+      }, 3000);
+    } else {
+      this.router.navigate(['/cart']);
+    }
   }
 
   @HostListener('document:click', ['$event'])
   onClickOutside(event: Event) {
     const target = event.target as HTMLElement;
     if (!target.closest('.sign-in-button')) {
-      const dropdownContent = this.eRef.nativeElement.querySelector('#dropdownContent');
-      if (dropdownContent && dropdownContent.classList.contains('show')) {
-        dropdownContent.classList.remove('show');
-      }
+      this.isDropdownVisible = false;
     }
   }
 }

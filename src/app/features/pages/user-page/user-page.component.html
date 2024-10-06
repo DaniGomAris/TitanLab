@@ -1,0 +1,22 @@
+<app-header></app-header>
+<main class="profile-container">
+    <div class="profile-picture">
+      <img src="assets/perfil.jpg" alt="User Profile Picture">
+    </div>
+  
+    <div class="user-info">
+      <div class="info-row">
+        <span class="label">Name:</span>
+        <span class="value">{{ user?.fullName }}</span>
+      </div>
+      <div class="info-row">
+        <span class="label">Email:</span>
+        <span class="value">{{ user?.email }}</span>
+      </div>
+      <div class="info-row">
+        <span class="label">Date of Birth:</span>
+        <span class="value">{{ user?.dob }}</span>
+      </div>
+    </div>
+  </main>
+  
