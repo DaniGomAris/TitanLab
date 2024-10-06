@@ -1,0 +1,21 @@
+footer {
+    text-align: center;
+    font-size: 12px;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.footer-links a {
+    color: #FFB908;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.footer-links a:active {
+    text-decoration: underline;
+}

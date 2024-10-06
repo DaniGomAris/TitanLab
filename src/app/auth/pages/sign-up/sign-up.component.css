@@ -21,6 +21,7 @@ main {
     text-align: center;
     padding: 10px;
     max-width: 400px;
+    margin: 0 auto;
 }
 
 .signup-box {
@@ -94,26 +95,4 @@ hr {
     border-top: 1px solid #cccccc;
     margin: 20px 0;
     width: 100%;
-}
-
-footer {
-    text-align: center;
-    font-size: 12px;
-}
-
-.footer-links {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    justify-content: center;
-}
-
-.footer-links a {
-    color: #FFB908;
-    text-decoration: none;
-    margin: 5px;
-}
-
-.footer-links a:active {
-    text-decoration: underline;
 }

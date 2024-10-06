@@ -1,0 +1,34 @@
+
+<main>
+    <div class="signup-box">
+        <h1>Create account</h1>
+        <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" [(ngModel)]="username" required />
+        </div>
+        <div class="input-group">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" [(ngModel)]="fullName" required />
+        </div>
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" [(ngModel)]="email" required />
+        </div>
+        <div class="input-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" [(ngModel)]="dob" required />
+        </div>
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" [(ngModel)]="password" required />
+        </div>
+        <div class="input-group">
+            <label for="re-password">Re-enter Password</label>
+            <input type="password" id="re-password" [(ngModel)]="rePassword" required />
+        </div>
+        <button (click)="register()">Continue</button>
+        <hr>
+        <p>Already have an account? <a [routerLink]="['/sign-in']">Sign in</a></p>
+    </div>
+</main>
+<app-footer></app-footer>
