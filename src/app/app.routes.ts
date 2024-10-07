@@ -5,6 +5,7 @@ import { HomeComponent } from './features/pages/home/home.component';
 import { UserPageComponent } from './features/pages/user-page/user-page.component';
 import { CartPageComponent } from './features/pages/cart-page/cart-page.component';
 import { ProductsPageComponent } from './features/pages/products-page/products-page.component';
+import { EditUserComponent } from './features/pages/edit-user/edit-user.component';
 
 export const routes: Routes = [
     {path: 'sign-in', component:SignInComponent},
@@ -13,5 +14,6 @@ export const routes: Routes = [
     {path: 'user', component:UserPageComponent},
     {path: 'cart', component:CartPageComponent},
     {path: 'products', component:ProductsPageComponent},
+    {path: 'edit-user', component:EditUserComponent},
     {path: '', redirectTo:'home', pathMatch:'full'}
 ]
